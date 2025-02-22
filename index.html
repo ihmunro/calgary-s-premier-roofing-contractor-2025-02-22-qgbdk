@@ -3,28 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calgary's Premier Roofing Contractor</title>
     <meta name="description" content="Calgary's trusted roofing experts delivering quality craftsmanship, superior service, and professional respect.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body class="font-['Inter'] antialiased bg-white">
     <!-- Header -->
     <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold text-gray-800">Premier Roofing</a>
+                <a href="https://ihmunro.github.io/calgary-s-premier-roofing-contractor-2025-02-22-qgbdk" class="text-2xl font-bold text-gray-800 hover:text-blue-600 transition-colors duration-300">Premier Roofing</a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#services" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Services</a>
-                    <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Features</a>
-                    <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">FAQ</a>
-                    <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-300">Contact</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Services</a>
+                    <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Features</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Testimonials</a>
+                    <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
                 </div>
-                <button class="md:hidden text-gray-600 hover:text-gray-900">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
+                <button class="mobile-menu-button md:hidden text-gray-600 hover:text-gray-900" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-white rounded-lg shadow-lg absolute left-6 right-6">
+                <a href="#services" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-blue-600 transition-colors duration-300">Services</a>
+                <a href="#features" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-blue-600 transition-colors duration-300">Features</a>
+                <a href="#about" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-blue-600 transition-colors duration-300">About</a>
+                <a href="#testimonials" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-blue-600 transition-colors duration-300">Testimonials</a>
+                <a href="#faq" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                <a href="#contact" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 hover:text-blue-600 transition-colors duration-300">Contact</a>
             </div>
         </nav>
     </header>
@@ -33,95 +55,165 @@
     <section class="relative pt-32 pb-24 bg-gradient-to-br from-blue-50 to-gray-50">
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">Calgary's Premier Roofing Contractor</h1>
-                <p class="text-xl md:text-2xl text-gray-600 mb-12">Our goal is to continually provide the highest level of quality in everything we do</p>
-                <a href="https://calgaryspremierroofer.com" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">Get Your Free Quote</a>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">Transform Your Home with Calgary's Most Trusted Roofing Experts</h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-12">Delivering premium roofing solutions with unmatched craftsmanship, guaranteed satisfaction, and industry-leading warranties</p>
+                <a href="https://calgaryspremierroofer.com" class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">Get Your Free Quote Today</a>
             </div>
         </div>
         <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
     </section>
 
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About Premier Roofing</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Founded in 2010, Premier Roofing emerged from a vision to revolutionize Calgary's roofing industry through exceptional quality and customer service. What began as a small family operation has grown into one of the city's most respected roofing companies, serving thousands of satisfied homeowners and businesses throughout the Calgary area.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Our mission is to provide unparalleled roofing solutions while maintaining the highest standards of integrity, craftsmanship, and customer satisfaction. We believe in building lasting relationships with our clients through transparency, reliability, and exceptional service. Our core values of honesty, quality, safety, and innovation guide every project we undertake.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
-    <section class="py-24 bg-white" id="features">
+    <section class="py-24 bg-gray-50" id="features">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Ethical Practices</h3>
-                    <p class="text-gray-600">We maintain the highest standards of integrity and honesty in all our business dealings.</p>
+                    <h3 class="text-xl font-semibold mb-4">Industry-Leading Standards</h3>
+                    <p class="text-gray-600">We exceed industry standards with premium materials, expert installation techniques, and comprehensive quality control measures that ensure lasting protection for your home.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                     <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Safety First</h3>
-                    <p class="text-gray-600">Your safety and the safety of our team is our top priority on every project.</p>
+                    <h3 class="text-xl font-semibold mb-4">Certified Safety Protocols</h3>
+                    <p class="text-gray-600">Our team follows rigorous safety protocols and maintains full insurance coverage, ensuring complete peace of mind throughout your roofing project.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                     <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
                         <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-semibold mb-4">Accountability</h3>
-                    <p class="text-gray-600">We stand behind our work with comprehensive warranties and dedicated support.</p>
+                    <h3 class="text-xl font-semibold mb-4">Lifetime Warranty</h3>
+                    <p class="text-gray-600">Every installation comes with our comprehensive warranty coverage, backed by 24/7 support and our commitment to long-term customer satisfaction.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section class="py-24 bg-gray-50">
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Why Choose Us</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="text-center">
-                    <h3 class="text-xl font-semibold mb-4">Superior Craftsmanship</h3>
-                    <p class="text-gray-600">Expertly trained professionals delivering exceptional quality on every project.</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Premier Roofing replaced our entire roof in just two days. Their team was professional, clean, and incredibly efficient. The new roof looks amazing and has already withstood several major storms without any issues."</p>
+                    <div class="font-semibold">Sarah Johnson</div>
+                    <div class="text-sm text-gray-500">Homeowner in Bridgeland</div>
                 </div>
-                <div class="text-center">
-                    <h3 class="text-xl font-semibold mb-4">Exceptional Service</h3>
-                    <p class="text-gray-600">Dedicated customer support and clear communication throughout your project.</p>
+                <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"As a property manager, I've worked with many roofing companies. Premier Roofing stands out for their reliability and attention to detail. They've become our go-to contractor for all roofing needs."</p>
+                    <div class="font-semibold">Michael Chen</div>
+                    <div class="text-sm text-gray-500">Property Manager, Calgary Commercial Properties</div>
                 </div>
-                <div class="text-center">
-                    <h3 class="text-xl font-semibold mb-4">Professional Respect</h3>
-                    <p class="text-gray-600">We treat your property with the utmost care and respect it deserves.</p>
+                <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"The team at Premier Roofing helped us navigate our insurance claim after hail damage. Their expertise and documentation made the process smooth, and the repair work was top-notch."</p>
+                    <div class="font-semibold">Robert Anderson</div>
+                    <div class="text-sm text-gray-500">Homeowner in Mount Royal</div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Outstanding service from start to finish. The initial consultation was thorough, pricing transparent, and the workmanship exceptional. They even completed the job ahead of schedule!"</p>
+                    <div class="font-semibold">Lisa Thompson</div>
+                    <div class="text-sm text-gray-500">Real Estate Agent</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-24 bg-white" id="faq">
+    <section class="py-24 bg-gray-50" id="faq">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
             <div class="max-w-3xl mx-auto space-y-6">
-                <div class="border-b border-gray-200 pb-6">
-                    <button class="flex justify-between items-center w-full text-left">
-                        <h3 class="text-lg font-semibold">How long does a typical roof installation take?</h3>
-                        <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <p class="mt-4 text-gray-600">Most residential roofing projects are completed within 1-3 days, depending on the size and complexity of your roof.</p>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                    <h3 class="text-lg font-semibold mb-4">How long does a typical roof installation take?</h3>
+                    <p class="text-gray-600">Most residential roofing projects are completed within 1-3 days, depending on the size and complexity of your roof. Our experienced team works efficiently while maintaining the highest quality standards.</p>
                 </div>
-                <!-- Add more FAQ items as needed -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                    <h3 class="text-lg font-semibold mb-4">What warranty coverage do you offer?</h3>
+                    <p class="text-gray-600">We provide a comprehensive warranty package including 25-year coverage on materials and 10-year coverage on workmanship. All warranties are fully transferable and backed by our commitment to customer satisfaction.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                    <h3 class="text-lg font-semibold mb-4">Do you help with insurance claims?</h3>
+                    <p class="text-gray-600">Yes, we have extensive experience working with insurance companies and can assist you throughout the claims process. Our team provides detailed documentation and works directly with adjusters to ensure a smooth experience.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                    <h3 class="text-lg font-semibold mb-4">What roofing materials do you recommend?</h3>
+                    <p class="text-gray-600">We offer a wide range of high-quality materials including asphalt shingles, metal roofing, and synthetic slate. Our experts will help you choose the best option based on your budget, style preferences, and climate considerations.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+                    <h3 class="text-lg font-semibold mb-4">How do you ensure safety during installation?</h3>
+                    <p class="text-gray-600">Safety is our top priority. We maintain full insurance coverage, follow strict safety protocols, and ensure all team members are certified and properly trained. We also protect your property with comprehensive site preparation and cleanup.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 bg-blue-600 text-white">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Start Your Roofing Project?</h2>
-            <p class="text-xl mb-12 text-blue-100">Contact us today for a free, no-obligation quote</p>
-            <a href="mailto:iainhmunro@gmail.com" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transform hover:scale-105 transition-all duration-300">Contact Us Now</a>
+    <section class="py-24 bg-blue-600 text-white relative overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?auto=format&fit=crop&w=1920'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-blue-600 opacity-90"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Ready to Transform Your Roof?</h2>
+            <p class="text-xl mb-12 text-blue-100">Schedule your free consultation and receive a detailed quote within 24 hours</p>
+            <a href="mailto:iainhmunro@gmail.com" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">Get Your Free Quote</a>
         </div>
     </section>
 
@@ -131,7 +223,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Premier Roofing</h3>
-                    <p class="text-gray-400">Calgary's trusted roofing experts since [year].</p>
+                    <p class="text-gray-400">Calgary's trusted roofing experts since 2010.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Contact</h4>
@@ -142,14 +234,17 @@
                     <ul class="space-y-2">
                         <li><a href="#services" class="text-gray-400 hover:text-white transition-colors duration-300">Services</a></li>
                         <li><a href="#features" class="text-gray-400 hover:text-white transition-colors duration-300">Features</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300">Testimonials</a></li>
                         <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors duration-300">FAQ</a></li>
+                        <li><a href="https://ihmunro.github.io/calgary-s-premier-roofing-contractor-2025-02-22-qgbdk/blog.html" class="text-gray-400 hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://ihmunro.github.io/calgary-s-premier-roofing-contractor-2025-02-22-qgbdk/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://ihmunro.github.io/calgary-s-premier-roofing-contractor-2025-02-22-qgbdk/terms.html" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
@@ -158,5 +253,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
